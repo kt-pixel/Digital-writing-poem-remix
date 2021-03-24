@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- custom font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
-      rel="stylesheet"
+     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
     />
 
     <title>The dog runs away</title>
@@ -16,7 +17,7 @@
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: 'Amatic SC', cursive;;
         margin: 2em;
         background-color: #F5DE78;
         color: #745E2B;
@@ -41,9 +42,9 @@
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "dog,owner,cat,trainer,rat".split(","),
+        verbs = "run,chase,capture,attack".split(","),
+        objects = "house,park,tree,city,road".split(",");
       // set up the counter
       let counter = 0;
 
@@ -63,7 +64,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " a " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
